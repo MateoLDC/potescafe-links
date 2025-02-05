@@ -5,6 +5,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-    base: "PotesCafe-Links",
+    site: "https://mateoldc.github.io",
+    base: "/potescafe-Links",
     integrations: [icon()],
 });
