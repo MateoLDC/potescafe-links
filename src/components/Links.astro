@@ -1,0 +1,97 @@
+
+---
+import {Icon} from 'astro-icon/components'
+---
+
+<div class="LinksContainer">
+    <div class="line"></div>
+    <h3>Nous écouter !</h3>
+    <a id="youtube" href="https://www.youtube.com/@PotesCafe" target="_blank">
+        <Icon id="LinksIcon" name="youtube"/>
+        <h3 id="LinksName">Youtube</h3>
+    </a>
+    <a id="spotify" href="https://open.spotify.com/show/1FezPNPnNNPS2ShvKmEgfR" target="_blank">
+        <Icon id="LinksIcon" name="spotify"/>
+        <h3 id="LinksName">Spotify</h3>
+    </a>
+    <a id="deezer" href="https://www.deezer.com/fr/show/1001428351" target="_blank">
+        <Icon id="LinksIcon" name="fadeezer"/>
+        <h3 id="LinksName">Deezer</h3>
+    </a>
+    <a id="castbox" href="https://www.youtube.com/@PotesCafe" target="_blank">
+        <Icon id="LinksIcon" name="castbox"/>
+        <h3 id="LinksName">Castbox</h3>
+    </a>
+    <a id="podcastaddict" href="https://podcastaddict.com/podcast/potes-cafe/5676743" target="_blank">
+        <Icon id="LinksIcon" name="podcastaddict"/>
+        <h3 id="LinksName">Podcast Addict</h3>
+    </a>
+    
+</div>
+
+<style>
+    @import url('variables.css');
+
+    .LinksContainer{
+        padding: 2rem 0 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .line{
+        width: 20rem;
+        border: 1px dashed var(--primary-color);
+        margin-bottom: 1rem;
+    }
+
+    a{
+        width: 75vw;
+        border: none;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-decoration: none;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        box-shadow: var(--shadow);
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        box-shadow: var(--shadow-hover);
+    }
+
+    #LinksIcon{
+        grid-column: 1;
+        margin-left: 1.5rem;
+        align-self: center;
+        font-size: 2rem;
+    }
+
+    #youtube{
+        background-color: var(--youtube-color);
+        color: var(--youtube-text-color);
+    }
+    #spotify{
+        background-color: var(--spotify-color);
+        color: var(--spotify-text-color);
+    }
+    #deezer{
+        background-color: var(--deezer-color);
+        color: var(--deezer-text-color);
+    }
+    #castbox{
+        background:linear-gradient(45deg, var(--castbox-color-1), var(--castbox-color-2));
+        color: var(--castbox-text-color);
+    }
+    #podcastaddict{
+        background:linear-gradient(45deg, var(--podcastaddict-color-1), var(--podcastaddict-color-2));
+        color: var(--podcastaddict-text-color);
+    }
+    #LinksName{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        justify-self: center;
+    }
+</style>

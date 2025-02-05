@@ -1,0 +1,48 @@
+---
+import PotesCafeLogo from '../assets/PotesCafeLogo.svg';
+---
+
+<header>
+	<img id="logo" src={PotesCafeLogo.src} alt="logo" />
+	<div class="intro">
+		<h1>Potes Cafe</h1>
+		<div class="bio">
+			<p>Des potes qui parlent de culture autour d'une œuvre en particulier dans chaque épisode.</p>
+		</div>
+	</div>
+</header>
+
+<style>
+	@import url('variables.css');
+	header {
+		margin: 5rem 0 1rem 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	#logo {
+		width: 250px;
+		border-radius: 2.5rem;
+		box-shadow: var(--shadow);
+	}
+
+	.intro{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h1 {
+		color: var(--primary-color);
+		padding: 1rem 0 1rem 0;
+		border-top: 2px solid var(--primary-color);
+		border-bottom: 2px solid var(--primary-color);
+	}
+
+	.bio{
+		text-align: center;
+		padding: 0 1rem 0 1rem;
+	}
+</style>

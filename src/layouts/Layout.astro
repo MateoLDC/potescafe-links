@@ -3,9 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<link rel="icon" type="image/svg+xml" href="/src/assets/PotesCafeLogoRounded.svg" />
+		<!-- <meta name="generator" content={Astro.generator} /> -->
+		<script src="https://kit.fontawesome.com/0be41fd53b.js" crossorigin="anonymous"></script>
+		<title>PotesCafe Links</title>
 	</head>
 	<body>
 		<slot />
@@ -13,10 +14,20 @@
 </html>
 
 <style>
+	@import url('/src/components/variables.css');
 	html,
 	body {
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		width: 100vW;
+		height: 100vh;
+		font-family: var(--MPCL);
+		background-image: url(/src/assets/bg.svg);
+		background-size: cover;
+    	background-position: center;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+		color: white;
+		display: flex;
+		flex-direction: column;
 	}
 </style>
