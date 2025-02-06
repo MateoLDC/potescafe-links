@@ -7,22 +7,28 @@
     --secondary-color: black;
     --text-color: white;
     /* youtube color */
-    --youtube-color: #fe0032;
+    --youtube-color: #ff0000;
     --youtube-text-color: white;
     /* spotify color */
-    --spotify-color: #15d860;
-    --spotify-text-color: #100a0a;
+    --spotify-color: #1ed760;
+    --spotify-text-color: white;
     /* deezer color */
     --deezer-color: #a237ff;
     --deezer-text-color: white;
     /* castbox color */
     --castbox-color-1: #fe9751;
     --castbox-color-2: #fc4617;
-    --castbox-text-color: #061f33;
+    --castbox-text-color: white;
     /* podcast addict color */
     --podcastaddict-color-1: #f28430;
     --podcastaddict-color-2: #e8622a;
     --podcastaddict-text-color: white;
+    /* instagram color */
+    --instagram-color: #833ab4;
+    /* facebook color */
+    --facebook-color: #0165e1;
+    /* mnstagram color */
+    --mail-color: #ea4235;
 
     /* Shadow */
     --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

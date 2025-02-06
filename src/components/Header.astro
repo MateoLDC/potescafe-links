@@ -1,9 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import PotesCafeLogo from '../assets/PotesCafeLogo.svg';
 ---
 
 <header>
-	<img id="logo" src={PotesCafeLogo.src} alt="logo" />
+	<Image id="logo" src={PotesCafeLogo} alt="Image de Potes Cafe" />
 	<div class="intro">
 		<h1>Potes Cafe</h1>
 		<div class="bio">
@@ -24,6 +25,7 @@ import PotesCafeLogo from '../assets/PotesCafeLogo.svg';
 
 	#logo {
 		width: 250px;
+		height: 250px;
 		border-radius: 2.5rem;
 		box-shadow: var(--shadow);
 	}

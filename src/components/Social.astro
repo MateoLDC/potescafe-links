@@ -6,14 +6,14 @@ import {Icon} from 'astro-icon/components'
     <div class="line"></div>
     <h3>Nous suivre / contacter !</h3>
     <div class="SocialLinks">
-        <a href="https://www.instagram.com/potescafe/" id="SocialLink" target="_blank">
-            <Icon id="SocialIcon" name="instagram"/>
+        <a href="https://www.instagram.com/potescafe/" id="SocialLink" target="_blank" aria-label="Lien vers Instagram">
+            <Icon id="InstagramIcon" name="instagram"/>
         </a>
-        <a href="https://www.facebook.com/profile.php?id=61569846267594" id="SocialLink" target="_blank">
-            <Icon id="SocialIcon" name="facebook"/>
+        <a href="https://www.facebook.com/profile.php?id=61569846267594" id="SocialLink" target="_blank" aria-label="Lien vers Facebook">
+            <Icon id="FacebookIcon" name="facebook"/>
         </a>
-        <a href="mailto:potescafe@gmail.com?subject=Sujet du message" id="SocialLink" target="_blank">
-            <Icon id="SocialIcon" name="envelope-regular"/>
+        <a href="mailto:potescafe@gmail.com?subject=Sujet du message" id="SocialLink" target="_blank" aria-label="Envoyer un mail">
+            <Icon id="MailIcon" name="envelope-regular"/>
         </a>
     </div>
 </div>
@@ -44,9 +44,23 @@ import {Icon} from 'astro-icon/components'
         font-size: 2rem;
         text-decoration: none;
         color: var(--primary-color);
+        transition: transform 0.5s ease;
     }
 
-    #SocialIcon:hover{
+    a:hover{
         cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    #InstagramIcon:hover{
+        color: var(--instagram-color);
+    }
+
+    #FacebookIcon:hover{
+        color: var(--facebook-color);
+    }
+
+    #MailIcon:hover{
+        color: var(--mail-color);
     }
 </style>
