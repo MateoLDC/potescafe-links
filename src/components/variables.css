@@ -3,7 +3,7 @@
 
 :root {
     /* Couleurs */
-    --primary-color: #faa721;
+    --primary-color: white;
     --secondary-color: black;
     --text-color: white;
     --background-color: #1c1c1c;
@@ -24,12 +24,7 @@
     --podcastaddict-color-1: rgba(242, 132, 48, 0.5);
     --podcastaddict-color-2: rgba(232, 98, 42, 0.5);
     --podcastaddict-text-color: white;
-    /* instagram color */
-    --instagram-color: #833ab4;
-    /* facebook color */
-    --facebook-color: #0165e1;
-    /* mnstagram color */
-    --mail-color: #ea4235;
+    --footer-color: #424242;
 
     /* Shadow */
     --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

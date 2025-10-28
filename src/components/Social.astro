@@ -4,10 +4,13 @@ import {Icon} from 'astro-icon/components'
 
 <div class="SocialContainer">
     <div class="line"></div>
-    <h3>Nous suivre / contacter !</h3>
+    <h3>Nous suivre / nous contacter !</h3>
     <div class="SocialLinks">
         <a href="https://www.instagram.com/potescafe/" id="SocialLink" target="_blank" aria-label="Lien vers Instagram">
             <Icon id="InstagramIcon" name="instagram"/>
+        </a>
+        <a href="https://www.tiktok.com/@potescaf" id="SocialLink" target="_blank" aria-label="Lien vers Tiktok">
+            <Icon id="TiktokIcon" name="tiktok"/>
         </a>
         <a href="https://www.facebook.com/profile.php?id=61569846267594" id="SocialLink" target="_blank" aria-label="Lien vers Facebook">
             <Icon id="FacebookIcon" name="facebook"/>
@@ -31,7 +34,7 @@ import {Icon} from 'astro-icon/components'
 
     .line{
         width: 20rem;
-        border: 1px dashed #FAA721;
+        border: 1px dashed var(--primary-color);
         margin-bottom: 1rem;
     }
 
@@ -44,23 +47,11 @@ import {Icon} from 'astro-icon/components'
         font-size: 2rem;
         text-decoration: none;
         color: var(--primary-color);
-        transition: transform 0.5s ease;
+        transition: transform 0.5s;
     }
 
     a:hover{
         cursor: pointer;
         transform: scale(1.1);
-    }
-
-    #InstagramIcon:hover{
-        color: var(--instagram-color);
-    }
-
-    #FacebookIcon:hover{
-        color: var(--facebook-color);
-    }
-
-    #MailIcon:hover{
-        color: var(--mail-color);
     }
 </style>
